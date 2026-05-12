@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(74, 222, 128, 0.2);
+  color: #4ade80;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #111827 0%, #22c55e 60%, #16a34a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+}
+
+.card-hover {
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  border-color: rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+
+/* Shimmer skeleton */
+@keyframes shimmer {
+  0% { background-position: -400% 0; }
+  100% { background-position: 400% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, #f3f3f3 25%, #e8e8e8 50%, #f3f3f3 75%);
+  background-size: 400% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+/* WhatsApp markdown renderer */
+.wm-content { font-size: 0.875rem; line-height: 1.65; color: #374151; }
+.wm-content .wm-p { margin: 3px 0; }
+.wm-content .wm-gap { height: 8px; }
+.wm-content .wm-hr { border: none; border-top: 1px solid #f0f0f0; margin: 10px 0; }
+.wm-content .wm-ol { list-style-type: decimal; padding-left: 1.25rem; margin: 4px 0; }
+.wm-content .wm-ul { list-style-type: disc; padding-left: 1.25rem; margin: 4px 0; }
+.wm-content li { margin: 3px 0; }
+.wm-content strong { font-weight: 700; color: #111827; }
+.wm-content .wm-header { font-weight: 700; font-size: 0.9rem; color: #111827; margin-top: 16px; margin-bottom: 6px; }

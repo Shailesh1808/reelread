@@ -1,0 +1,38 @@
+# Python
+venv/
+backend/.env
+backend/app/prompts.py
+backend/instagram_cookies.txt
+backend/www.instagram.com_cookies.txt
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.db
+*.sqlite3
+*.log
+temp/
+tmp/
+
+# Node
+web/node_modules/
+web/.next/
+web/.env
+web/.env.local
+web/.env*.local
+web/.env.development
+web/.env.production
+web/out/
+*.tsbuildinfo
+next-env.d.ts
+
+# General
+.DS_Store
+*.env
+*.env.local
+Thumbs.db
+ngrok.exe
+instagram_cookies.txt
+www.instagram.com_cookies.txt
+.claude/
