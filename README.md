@@ -88,7 +88,7 @@ ReelRead uses a separate prompts file that is not committed to git.
 
 ## Deployment
 
-Backend deploys to Railway. Frontend deploys to Vercel. Both connect to the same GitHub repo — Railway watches `/backend`, Vercel watches `/web`.
+Backend deploys to Railway. Frontend deploys to Vercel. Both connect to the same GitHub repo, Railway watches `/backend`, Vercel watches `/web`.
 
 ## What I Learned Building This
 
@@ -102,11 +102,9 @@ This was my first time building a WhatsApp bot. Key things I learned:
 - Handling Instagram rate limiting with cookies
 - Message ordering issues in WhatsApp
 - FFmpeg for audio extraction and processing
-- Supabase for database and real-time operations
-- Next.js 14 with TypeScript for the dashboard
 - Phone OTP authentication with Twilio Verify
 - Deploying Python to Railway
-- Deploying Next.js to Vercel
+
 
 ## Screenshots
 
