@@ -1,6 +1,6 @@
 # ReelRead
 
-ReelRead turns Instagram Reels and TikTok videos into clean, structured text summaries — delivered directly on WhatsApp. Built for job seekers who are tired of saving career advice videos they never go back to.
+ReelRead turns Instagram Reels and TikTok videos into clean, structured text summaries, delivered directly on WhatsApp. Built for job seekers who are tired of saving career advice videos they never go back to.
 
 ## How It Works
 
@@ -88,7 +88,7 @@ ReelRead uses a separate prompts file that is not committed to git.
 
 ## Deployment
 
-Backend deploys to Railway. Frontend deploys to Vercel. Both connect to the same GitHub repo, Railway watches `/backend`, Vercel watches `/web`.
+Backend deploys to Railway. Frontend deploys to Vercel. Both connect to the same GitHub repo. Railway watches `/backend`, Vercel watches `/web`.
 
 ## What I Learned Building This
 
