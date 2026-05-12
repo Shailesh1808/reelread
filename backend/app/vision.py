@@ -4,7 +4,15 @@ import anthropic
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
 from dotenv import load_dotenv
-from app.prompts import VISION_PROMPT
+from app.prompt_loader import get_prompt
+
+VISION_PROMPT = get_prompt("VISION_PROMPT",
+    "Extract ALL text visible in this image exactly "
+    "as it appears. Include text overlays, captions, "
+    "subtitles, graphics, and any other text. "
+    "Return only the extracted text, nothing else. "
+    "If there is no text, return empty string."
+)
 
 load_dotenv()
 

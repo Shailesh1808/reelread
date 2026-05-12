@@ -1,7 +1,19 @@
 import os
 import anthropic
 from dotenv import load_dotenv
-from app.prompts import HEADING_PROMPT
+from app.prompt_loader import get_prompt
+
+HEADING_PROMPT = get_prompt("HEADING_PROMPT",
+    "Generate a heading for this career advice content.\n\n"
+    "Rules:\n"
+    "- Maximum 6 words\n"
+    "- Specific, not generic\n"
+    "- No punctuation at the end\n"
+    "- No quotes\n"
+    "- Reads like a newspaper headline\n\n"
+    "Content:\n{snippet}\n\n"
+    "Output only the heading. Nothing else."
+)
 
 load_dotenv()
 
